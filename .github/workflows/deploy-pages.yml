@@ -3,6 +3,9 @@ name: Deploy GitHub Pages
 on:
   workflow_call:
     inputs:
+      node:
+        required:  true
+        type:  string
       node-version:
         description: Node.js version
         required: false
